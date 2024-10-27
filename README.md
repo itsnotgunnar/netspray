@@ -1,6 +1,18 @@
 # NetSpray
 
-Big thanks to NetExec & CrackMapExec crew for saving hours of my life.
+Shout out to NetExec & CrackMapExec crew.
+
+## Purpose
+
+"If only you tried *that*..."
+
+## Overview
+
+Based on the information you provide, it'll construct and execute all of the different ways that you could authenticate to each nxc/cme compatible service.
+
+Anytime a new username, hash, password or possible word is discovered, this is an easy way to run the gaunlet instead of checking each service with the different auth variations.
+
+Do not use if stealth is a priority. 
 
 ## Installation & Dependencies
 
@@ -61,7 +73,7 @@ Options:
 Basic Usage with Single User and Password.
 
 ```bash
-python netspray.py -i target.domain.com -u $user -p $pass
+python netspray.py -i $ip -u $user -p $pass
 ```
 
 Using Files for Users and Passwords.
@@ -98,6 +110,7 @@ python netspray.py -i target.domain.com -k /tmp/krb5cc_1000 -d $dom -dc $dc
 
 ```bash
 Authentication Summary:
+
 User: alice
   Service: smb with password 'password123' -> user_pass
   Service: ldap with password 'password123' -> user_pass
@@ -111,3 +124,4 @@ Note: Only users with successful authentications are shown.
 ### Command Logging
 
 All executed commands are logged in nxc_commands.txt within the specified output directory. This file contains a list of commands run during the script execution, which is useful for auditing and review purposes.
+
