@@ -1,4 +1,4 @@
-# NetSpray
+# netspray
 
 Shout out to NetExec & CrackMapExec crew.
 
@@ -19,7 +19,7 @@ Do not use if stealth is a priority.
 Clone or paste the code into a file.
 
 ```bash
-git clone https://github.com/itsnotgunnar/NetSpray
+git clone https://github.com/itsnotgunnar/netspray
 sudo apt install nxc
 ```
 
